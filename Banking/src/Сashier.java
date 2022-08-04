@@ -1,12 +1,18 @@
+import java.util.Scanner;
 
 public class Сashier {
-    
+    Scanner in;
 	String name ="NoName";
 	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	void askForNumber(Client client) {
+		in = new Scanner(System.in);
+		System.out.print("Input a number of credit: ");
+		int sum = in.nextInt();
+		in.close();
+		this.give_credit(client, sum);
 	}
+	
+	
 	
 	void give_credit(Client client,int sum) {//выдает кредит клиенту банка, вызывая его метод
 		                                     //Issues a loan to a client of bank
