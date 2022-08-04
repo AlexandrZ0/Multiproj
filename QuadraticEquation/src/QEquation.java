@@ -8,7 +8,6 @@ public class QEquation {
 	}
 	
 	static void rezultForEquation(int x, int a,int b,int c) {
-		
 		p = b/a;
 		q = c/a;
 		System.out.printf("p = %d, q= %d",p,q);
