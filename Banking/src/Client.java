@@ -2,7 +2,7 @@
 public class Client {
    
 	
-	String name;
+	String name="NoName";
 	//float count;
 	Count count = new Count();
 	
