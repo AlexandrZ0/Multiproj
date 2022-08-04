@@ -1,8 +1,10 @@
+import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Scanner in =  new Scanner(System.in);
 		Client client = new Client();
 		//Cashier cashier  = new Cashier();
 		Сashier cashier = new Сashier();
@@ -10,8 +12,12 @@ public class Main {
 		/*client.getAmount();
 		client.take_credit(100);
 		client.getAmount();*/
-		
-		cashier.give_credit(client, 1000);
+		System.out.print("Input a number of credit: ");
+        int num = in.nextInt();
+          
+        //System.out.printf("Your number: %d \n", num);
+        in.close();
+		cashier.give_credit(client, num);
 
 	}
 	
